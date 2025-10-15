@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet Art Booth | 練り飴 & お絵かきせんべい</title>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink: #ff9b9b;
+      --mint: #b4f0d4;
+      --orange: #ffa366;
+      --gray: #555;
+      --bg: #fffaf7;
+    }
+    body {
+      margin: 0;
+      font-family: 'Zen Kaku Gothic New', sans-serif;
+      background: var(--bg);
+      color: var(--gray);
+      text-align: center;
+    }
+    header {
+      padding: 2rem 1rem 1rem;
+    }
+    header h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #333;
+      margin: 0.5rem 0;
+    }
+    header p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .tag {
+      background: #ff6b6b;
+      color: white;
+      display: inline-block;
+      border-radius: 999px;
+      padding: 0.3rem 1rem;
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      color: #333;
+    }
+
+    section {
+      padding: 2rem 1rem;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .card {
+      width: 250px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+    }
+    .card h3 {
+      color: #333;
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+    .price {
+      display: inline-block;
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      font-weight: bold;
+      color: white;
+    }
+    .price.pink { background: var(--pink); }
+    .price.mint { background: var(--mint); color: #333; }
+
+    .features {
+      background: #fff4dc;
+    }
+
+    .feature-box {
+      width: 220px;
+      background: white;
+      border-radius: 16px;
+      padding: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .location {
+      background: #fff;
+      border-radius: 16px;
+      padding: 1.5rem;
+      display: inline-block;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: left;
+      margin-top: 1rem;
+    }
+
+    footer {
+      background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+      color: white;
+      padding: 2.5rem 1rem;
+      margin-top: 2rem;
+    }
+
+    footer h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .sns {
+      margin-top: 1rem;
+    }
+
+    .sns a {
+      text-decoration: none;
+      color: #333;
+      background: white;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      margin: 0 0.3rem;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    @media (max-width: 600px) {
+      .cards, .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png" alt="logo" width="50">
+    <h1>Sweet Art Booth</h1>
+    <p>練り飴 & お絵かきせんべい</p>
+    <div class="tag">🎪 2024年 工学部祭 出店中！</div>
+  </header>
+
+  <section>
+    <h2>手作りの<br>練り飴＆お絵かきせんべい</h2>
+    <p>あなただけのオリジナル作品を作ろう！</p>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/763/763812.png" alt="飴アイコン" width="60">
+        <h3>練り飴づくり</h3>
+        <p>好きな色と形で<br>オリジナル練り飴を作ろう！</p>
+        <div class="price pink">¥200</div>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/447/447031.png" alt="せんべいアイコン" width="60">
+        <h3>お絵かきせんべい</h3>
+        <p>食べられるキャンバスに<br>自由にお絵かき！</p>
+        <div class="price mint">¥300</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>なぜ選ばれるの？</h2>
+    <div class="cards">
+      <div class="feature-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/535/535183.png" width="40">
+        <h3>手作りの温かさ</h3>
+        <p>一つひとつ丁寧に手作りしています</p>
+      </div>
+      <div class="feature-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/2921/2921822.png" width="40">
+        <h3>無限の創造性</h3>
+        <p>あなたのアイデアを形にしてみよう</p>
+      </div>
+      <div class="feature-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" width="40">
+        <h3>みんなで楽しめる</h3>
+        <p>友達や家族と一緒に思い出作り</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>📍 お店の場所</h2>
+    <div class="location">
+      <p><strong>工学部 中庭テント No.15</strong></p>
+      <p>🕓 営業時間：10:00〜16:00</p>
+      <p>📅 開催日：11月2日（土）・3日（日）</p>
+    </div>
+  </section>
+
+  <footer>
+    <h3>学部祭で会いましょう！</h3>
+    <p>甘くて楽しい体験をお待ちしています ✨</p>
+    <div class="sns">
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+    <p style="font-size:0.8rem; margin-top:2rem;">© 2024 Sweet Art Booth - 工学部祭模擬店</p>
+  </footer>
+
+</body>
+</html>
